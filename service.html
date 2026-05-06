@@ -103,9 +103,7 @@
                 </div>
                 <div class="pbmit-button-box-second">
                   <div>
-                    <a class="pbmit-btn pbmit-btn-outline"
-                      href="https://wa.me/+97460002324?text=Hello%20SafeWay,%20I%20would%20like%20to%20book%20a%20vehicle%20service."
-                      target="_blank">
+                    <a class="pbmit-btn pbmit-btn-outline open-service-modal" href="javascript:void(0);">
                       <span class="pbmit-button-content-wrapper">
                         <span class="pbmit-button-icon">
                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 22.76 22.76">
@@ -533,7 +531,7 @@
                   </div>
                 </div>
               </div>
-              <a href="contact.html" class="pbmit-btn pbmit-btn-global mt-3">Request a Service Quote</a>
+              <!-- <a href="contact.html" class="pbmit-btn pbmit-btn-global mt-3">Request a Service Quote</a> -->
             </div>
           </div>
         </div>
@@ -743,6 +741,78 @@
     <!-- Scroll To Top End -->
   </div>
   <!-- Page Wrapper End -->
+
+  <!-- SERVICE BOOKING MODAL POPUP -->
+  <div id="serviceBookingModal" class="service-modal">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3>Book Your Service</h3>
+        <button class="close-modal" id="closeModalBtn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form id="serviceBookingForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="required">Full Name</label>
+              <input type="text" name="fullname" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label class="required">Email</label>
+              <input type="email" name="email" placeholder="hello@safeway.com" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="required">Phone Number</label>
+              <input type="tel" name="phone" placeholder="+974 XXXXXXXX" required>
+            </div>
+            <div class="form-group">
+              <label class="required">Preferred Date</label>
+              <input type="date" name="date" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="required">Select Service</label>
+            <select name="service" required>
+              <option value="">-- Choose a service --</option>
+              <option>Repair Works</option>
+              <option>Air Conditioning</option>
+              <option>Tire & RIM Works</option>
+              <option>Detailing & Interiors</option>
+              <option>Battery</option>
+              <option>Brake Works</option>
+              <option>Periodic Service</option>
+              <option>Breakdown Assistance</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="required">Pickup Address</label>
+            <input type="text" name="pickup_address" placeholder="Street, building, area, city" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="required">Vehicle Make</label>
+              <input type="text" name="vehicle_make" placeholder="e.g., Toyota, Honda" required>
+            </div>
+            <div class="form-group">
+              <label class="required">Vehicle Model</label>
+              <input type="text" name="vehicle_model" placeholder="e.g., Camry, Civic" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Issue Description (Optional)</label>
+            <textarea name="issue_description" placeholder="Describe the problem or required repair..."></textarea>
+          </div>
+          <div class="form-group">
+            <label>Landmarks / Package Details (Optional)</label>
+            <input type="text" name="landmarks" placeholder="Nearby landmark or special request">
+          </div>
+          <button type="submit" class="submit-btn"> Submit Request</button>
+          <div class="form-note">Our team will contact you within 1 hour to confirm.</div>
+        </form>
+      </div>
+    </div>
+  </div>
 
   <!-- JS 
         ============================================ -->

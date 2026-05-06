@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <title>About Us-Safeway Auto Solutions</title>
+  <title>About Us - Safeway Auto Solutions</title>
   <meta name="robots" content="noindex, follow" />
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -35,6 +35,11 @@
   <link rel="stylesheet" href="css/style.css" />
   <!-- Responsive CSS -->
   <link rel="stylesheet" href="css/responsive.css" />
+  
+  <style>
+    /* Popup Form Styles - Clean Modal */
+   
+  </style>
 </head>
 
 <body>
@@ -50,7 +55,7 @@
                 <div class="site-branding">
                   <h1 class="site-title">
                     <a href="index.html">
-                      <img class="logo-img" src="images/logo/safewaylogo.png" alt="Xcleen" />
+                      <img class="logo-img" src="images/logo/safewaylogo.png" alt="Safeway" />
                     </a>
                   </h1>
                 </div>
@@ -85,7 +90,8 @@
                           <li class="dropdown">
                             <a href="blog.html">Blog</a>
                           </li>
-                          <li><a href="contact.html">Contact Us</a></li>
+                          <li><a href="contact.html">Contact Us</a>
+                          </li>
                         </ul>
                       </div>
                     </div>
@@ -102,9 +108,8 @@
                 </div>
                 <div class="pbmit-button-box-second">
                   <div>
-                    <a class="pbmit-btn pbmit-btn-outline"
-                      href="https://wa.me/+97460002324?text=Hello%20SafeWay,%20I%20would%20like%20to%20book%20a%20vehicle%20service."
-                      target="_blank">
+                    <!-- UPDATED: Book Your Service button triggers popup -->
+                    <a class="pbmit-btn pbmit-btn-outline open-service-modal" href="javascript:void(0);">
                       <span class="pbmit-button-content-wrapper">
                         <span class="pbmit-button-icon">
                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 22.76 22.76">
@@ -340,7 +345,6 @@
               " />
 
           <!-- History Timeline -->
-
           <div class="pbmit-timeline pt-4">
             <div class="swiper-slider pbmit-element-timeline-style-1" data-autoplay="false" data-loop="false"
               data-dots="false" data-arrows="false" data-columns="4" data-margin="0" data-effect="slide">
@@ -644,24 +648,11 @@
     </div>
     <!-- Page Content End -->
 
-    <!-- footer -->
+    <!-- Footer (unchanged) -->
     <footer class="site-footer pbmit-bg-color-blackish">
-      <!-- <div class="pbmit-footer-big-area">
-				<div class="container">
-					<div class="row align-items-center">
-						<div class="col-md-12 col-xl-4">
-							<div class="pbmit-footer-logo">
-								<img src="images/logo/safewaylogo.png" alt="">
-							</div>
-						</div>
-						
-					</div>
-				</div>
-			</div> -->
       <div class="pbmit-footer-widget-area">
         <div class="container">
           <div class="row">
-            <!-- Col 1: Logo + Desc + Social -->
             <div class="pbmit-footer-widget-col-1 col-md-3">
               <div class="widget">
                 <div class="textwidget">
@@ -669,147 +660,58 @@
                     <img class="img-fluid" width="160" src="images/logo/safewaylogo.png" alt="Safeway" />
                   </a>
                   <p class="pbmit-footer-desc">
-                    Your trusted vehicle service partner in Qatar — from
-                    emergency support to complete fleet management.
+                    Your trusted vehicle service partner in Qatar — from emergency support to complete fleet management.
                   </p>
                   <ul class="pbmit-social-links">
-                    <li class="pbmit-social-li pbmit-social-facebook">
-                      <a title="Facebook" href="#" target="_blank" rel="noopener">
-                        <span><i class="pbmit-base-icon-facebook-f"></i></span>
-                      </a>
-                    </li>
-                    <li class="pbmit-social-li pbmit-social-twitter">
-                      <a title="Twitter" href="#" target="_blank" rel="noopener">
-                        <span><i class="pbmit-base-icon-twitter-2"></i></span>
-                      </a>
-                    </li>
-                    <li class="pbmit-social-li pbmit-social-instagram">
-                      <a title="Instagram" href="#" target="_blank" rel="noopener">
-                        <span><i class="pbmit-base-icon-instagram"></i></span>
-                      </a>
-                    </li>
-                    <li class="pbmit-social-li pbmit-social-youtube">
-                      <a title="Youtube" href="#" target="_blank" rel="noopener">
-                        <span><i class="pbmit-base-icon-youtube-play"></i></span>
-                      </a>
-                    </li>
+                    <li class="pbmit-social-li pbmit-social-facebook"><a href="#"><span><i class="pbmit-base-icon-facebook-f"></i></span></a></li>
+                    <li class="pbmit-social-li pbmit-social-twitter"><a href="#"><span><i class="pbmit-base-icon-twitter-2"></i></span></a></li>
+                    <li class="pbmit-social-li pbmit-social-instagram"><a href="#"><span><i class="pbmit-base-icon-instagram"></i></span></a></li>
+                    <li class="pbmit-social-li pbmit-social-youtube"><a href="#"><span><i class="pbmit-base-icon-youtube-play"></i></span></a></li>
                   </ul>
                 </div>
               </div>
             </div>
-
-            <!-- Col 2: Useful Links -->
             <div class="pbmit-footer-widget-col-2 col-md-3">
               <div class="widget pbmit-two-column-menu">
                 <h2 class="widget-title">Useful Links</h2>
                 <div class="textwidget">
-                  <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="service.html">Services</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                  </ul>
+                  <ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="service.html">Services</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul>
                 </div>
               </div>
             </div>
-
-            <!-- Col 3: Working Hours -->
             <div class="pbmit-footer-widget-col-4 col-md-3">
               <div class="widget widget_text">
                 <h2 class="widget-title">Working Hours</h2>
                 <div class="pbmit-timelist-wrapper">
                   <ul class="pbmit-timelist-list">
-                    <li>
-                      <span class="pbmit-timelist-day">Sun</span>
-                      <span class="pbmit-timelist-time">7:30 am – 12:30 pm, 3:30 am – 7:30 pm</span>
-                    </li>
-                    <li>
-                      <span class="pbmit-timelist-day">Mon</span>
-                      <span class="pbmit-timelist-time">7:30 am – 12:30 pm, 3:30am – 7:30 pm</span>
-                    </li>
-                    <li>
-                      <span class="pbmit-timelist-day">Tue</span>
-                      <span class="pbmit-timelist-time">7:30 am – 12:30 pm, 3:30 am – 7:30 pm</span>
-                    </li>
-                    <li>
-                      <span class="pbmit-timelist-day">Wed</span>
-                      <span class="pbmit-timelist-time">7:30 am – 12:30 pm, 3:30 am – 7:30 pm</span>
-                    </li>
-                    <li>
-                      <span class="pbmit-timelist-day">Thu</span>
-                      <span class="pbmit-timelist-time">7:30 am – 12:30 pm, 3:30 am – 7:30 pm</span>
-                    </li>
-                    <li>
-                      <span class="pbmit-timelist-day">Sat</span>
-                      <span class="pbmit-timelist-time">7:30am – 12:30 pm, 3:30am – 7:30 pm</span>
-                    </li>
-                    <!-- <li>
-                      <span class="pbmit-timelist-day">Saturday</span>
-                      <span class="pbmit-timelist-time">10:00am – 6:00pm</span>
-                    </li> -->
-                    <li class="pbmit-timelist-closed">
-                      <span class="pbmit-timelist-day">Fri</span>
-                      <span class="pbmit-timelist-time">Closed</span>
-                    </li>
+                    <li><span class="pbmit-timelist-day">Sun</span><span class="pbmit-timelist-time">7:30 am – 12:30 pm, 3:30 am – 7:30 pm</span></li>
+                    <li><span class="pbmit-timelist-day">Mon</span><span class="pbmit-timelist-time">7:30 am – 12:30 pm, 3:30am – 7:30 pm</span></li>
+                    <li><span class="pbmit-timelist-day">Tue</span><span class="pbmit-timelist-time">7:30 am – 12:30 pm, 3:30 am – 7:30 pm</span></li>
+                    <li><span class="pbmit-timelist-day">Wed</span><span class="pbmit-timelist-time">7:30 am – 12:30 pm, 3:30 am – 7:30 pm</span></li>
+                    <li><span class="pbmit-timelist-day">Thu</span><span class="pbmit-timelist-time">7:30 am – 12:30 pm, 3:30 am – 7:30 pm</span></li>
+                    <li><span class="pbmit-timelist-day">Sat</span><span class="pbmit-timelist-time">7:30am – 12:30 pm, 3:30am – 7:30 pm</span></li>
+                    <li class="pbmit-timelist-closed"><span class="pbmit-timelist-day">Fri</span><span class="pbmit-timelist-time">Closed</span></li>
                   </ul>
                 </div>
               </div>
             </div>
-
-            <!-- Col 4: Say Hello -->
             <div class="pbmit-footer-widget-col-3 col-md-3">
               <aside class="widget">
                 <h2 class="widget-title">Say Hello</h2>
                 <div class="pbmit-contact-widget-lines">
-                  <div class="pbmit-contact-widget-line pbmit-contact-widget-phone">
-                    <div class="pbmit-contact-widget-icon">
-                      <i class="pbmit-base-icon-phone-call"></i>
-                    </div>
-                    <div class="pbmit-contact-widget-text">
-                      <strong>Call Us</strong>
-                      <a href="tel:+97460002324">+974 6000 2324</a>
-                    </div>
-                  </div>
-
-                  <div class="pbmit-contact-widget-line pbmit-contact-widget-email">
-                    <div class="pbmit-contact-widget-icon">
-                      <i class="pbmit-base-icon-email"></i>
-                    </div>
-                    <div class="pbmit-contact-widget-text">
-                      <strong>Email Us</strong>
-                      <a href="mailto:info@safeway.com">info@safeway.com</a>
-                    </div>
-                  </div>
-
-                  <div class="pbmit-contact-widget-line pbmit-contact-widget-address">
-                    <div class="pbmit-contact-widget-icon">
-                      <i class="pbmit-base-icon-location"></i>
-                    </div>
-                    <div class="pbmit-contact-widget-text">
-                      <strong>Location</strong>
-                      <span>Street 14, Industrial Area, Doha, Qatar</span>
-                    </div>
-                  </div>
+                  <div class="pbmit-contact-widget-line"><div class="pbmit-contact-widget-icon"><i class="pbmit-base-icon-phone-call"></i></div><div class="pbmit-contact-widget-text"><strong>Call Us</strong><a href="tel:+97460002324">+974 6000 2324</a></div></div>
+                  <div class="pbmit-contact-widget-line"><div class="pbmit-contact-widget-icon"><i class="pbmit-base-icon-email"></i></div><div class="pbmit-contact-widget-text"><strong>Email Us</strong><a href="mailto:info@safeway.com">info@safeway.com</a></div></div>
+                  <div class="pbmit-contact-widget-line"><div class="pbmit-contact-widget-icon"><i class="pbmit-base-icon-location"></i></div><div class="pbmit-contact-widget-text"><strong>Location</strong><span>Street 14, Industrial Area, Doha, Qatar</span></div></div>
                 </div>
               </aside>
             </div>
           </div>
         </div>
-
-        <!-- Footer Bottom Bar -->
         <div class="pbmit-footer-bottom-bar">
           <div class="container">
             <div class="pbmit-footer-bottom-inner">
-              <span class="pbmit-footer-copy">
-                &copy; 2025 <a href="index.html">Safeway</a>. All rights
-                reserved. Developed By
-                <a href="https://xeventure.com/" target="_blank">Xeventure</a>
-              </span>
-              <div class="pbmit-footer-bottom-links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Use</a>
-              </div>
+              <span class="pbmit-footer-copy">&copy; 2025 <a href="index.html">Safeway</a>. All rights reserved. Developed By <a href="https://xeventure.com/" target="_blank">Xeventure</a></span>
+              <div class="pbmit-footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a></div>
             </div>
           </div>
         </div>
@@ -843,87 +745,100 @@
     </div>
     <!-- Scroll To Top End -->
   </div>
-  <!-- Page Wrapper End -->
 
-  <!-- JS 
-        ============================================ -->
-  <!-- jQuery JS -->
+  <!-- SERVICE BOOKING MODAL POPUP -->
+  <div id="serviceBookingModal" class="service-modal">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3>Book Your Service</h3>
+        <button class="close-modal" id="closeModalBtn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form id="serviceBookingForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="required">Full Name</label>
+              <input type="text" name="fullname" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label class="required">Email</label>
+              <input type="email" name="email" placeholder="hello@safeway.com" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="required">Phone Number</label>
+              <input type="tel" name="phone" placeholder="+974 XXXXXXXX" required>
+            </div>
+            <div class="form-group">
+              <label class="required">Preferred Date</label>
+              <input type="date" name="date" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="required">Select Service</label>
+            <select name="service" required>
+              <option value="">-- Choose a service --</option>
+              <option>Repair Works</option>
+              <option>Air Conditioning</option>
+              <option>Tire & RIM Works</option>
+              <option>Detailing & Interiors</option>
+              <option>Battery</option>
+              <option>Brake Works</option>
+              <option>Periodic Service</option>
+              <option>Breakdown Assistance</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="required">Pickup Address</label>
+            <input type="text" name="pickup_address" placeholder="Street, building, area, city" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="required">Vehicle Make</label>
+              <input type="text" name="vehicle_make" placeholder="e.g., Toyota, Honda" required>
+            </div>
+            <div class="form-group">
+              <label class="required">Vehicle Model</label>
+              <input type="text" name="vehicle_model" placeholder="e.g., Camry, Civic" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Issue Description (Optional)</label>
+            <textarea name="issue_description" placeholder="Describe the problem or required repair..."></textarea>
+          </div>
+          <div class="form-group">
+            <label>Landmarks / Package Details (Optional)</label>
+            <input type="text" name="landmarks" placeholder="Nearby landmark or special request">
+          </div>
+          <button type="submit" class="submit-btn"> Submit Request</button>
+          <div class="form-note">Our team will contact you within 1 hour to confirm.</div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS Scripts -->
   <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
   <script src="js/jquery.min.js"></script>
-  <!-- Popper JS -->
   <script src="js/popper.min.js"></script>
-  <!-- Bootstrap JS -->
   <script src="js/bootstrap.min.js"></script>
-  <!-- jquery Waypoints JS -->
   <script src="js/jquery.waypoints.min.js"></script>
-  <!-- jquery Appear JS -->
   <script src="js/jquery.appear.js"></script>
-  <!-- Numinate JS -->
   <script src="js/numinate.min.js"></script>
-  <!-- Slick JS -->
   <script src="js/swiper.min.js"></script>
-  <!-- Magnific JS -->
   <script src="js/jquery.magnific-popup.min.js"></script>
-  <!-- Circle Progress JS -->
   <script src="js/circle-progress.js"></script>
-  <!-- countdown JS -->
   <script src="js/jquery.countdown.min.js"></script>
-  <!-- AOS -->
   <script src="js/aos.js"></script>
-  <!-- GSAP -->
   <script src="js/gsap.js"></script>
-  <!-- Scroll Trigger -->
   <script src="js/ScrollTrigger.js"></script>
-  <!-- Split Text -->
   <script src="js/SplitText.js"></script>
-  <!-- Magnetic -->
   <script src="js/magnetic.js"></script>
-  <!-- Theia Sticky Sidebar JS -->
   <script src="js/theia-sticky-sidebar.js"></script>
-  <!-- GSAP Animation -->
   <script src="js/gsap-animation.js"></script>
-  <!-- Scripts JS -->
   <script src="js/scripts.js"></script>
 
-  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516"
-    integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg=="
-    data-cf-beacon='{"version":"2024.11.0","token":"125856bf84ab44059737e93b01aa0fef","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
-    crossorigin="anonymous"></script>
-  <script>
-    (function () {
-      function c() {
-        var b = a.contentDocument || a.contentWindow.document;
-        if (b) {
-          var d = b.createElement("script");
-          d.innerHTML =
-            "window.__CF$cv$params={r:'9f2b51601f5cdcf0',t:'MTc3NzI2NjU5NQ=='};var a=document.createElement('script');a.src='../cdn-cgi/challenge-platform/h/g/scripts/jsd/a80f1640690f/maind41d.js';document.getElementsByTagName('head')[0].appendChild(a);";
-          b.getElementsByTagName("head")[0].appendChild(d);
-        }
-      }
-      if (document.body) {
-        var a = document.createElement("iframe");
-        a.height = 1;
-        a.width = 1;
-        a.style.position = "absolute";
-        a.style.top = 0;
-        a.style.left = 0;
-        a.style.border = "none";
-        a.style.visibility = "hidden";
-        document.body.appendChild(a);
-        if ("loading" !== document.readyState) c();
-        else if (window.addEventListener)
-          document.addEventListener("DOMContentLoaded", c);
-        else {
-          var e = document.onreadystatechange || function () { };
-          document.onreadystatechange = function (b) {
-            e(b);
-            "loading" !== document.readyState &&
-              ((document.onreadystatechange = e), c());
-          };
-        }
-      }
-    })();
-  </script>
 </body>
 
 </html>
