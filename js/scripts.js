@@ -592,3 +592,77 @@
 		$(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});
 		$(".twentytwenty-container[data-orientation='vertical']").twentytwenty({default_offset_pct: 0.3, orientation: 'vertical'});
 	}
+
+	/*-------------------------------------
+    Service Booking Modal Popup
+    -------------------------------------*/
+	// Wait for DOM to be fully loaded
+	$(document).ready(function() {
+		
+		// Get modal element
+		var modal = $('#serviceBookingModal');
+		var openBtns = $('.open-service-modal');
+		var closeBtn = $('#closeModalBtn');
+		
+		// Function to open modal
+		function openModal() {
+			modal.addClass('active');
+			$('body').css('overflow', 'hidden');
+		}
+		
+		// Function to close modal
+		function closeModal() {
+			modal.removeClass('active');
+			$('body').css('overflow', '');
+		}
+		
+		// Open modal on button click (handles both existing and dynamically added buttons)
+		$(document).on('click', '.open-service-modal', function(e) {
+			e.preventDefault();
+			openModal();
+		});
+		
+		// Close modal on close button click
+		closeBtn.on('click', function() {
+			closeModal();
+		});
+		
+		// Close modal when clicking outside modal content
+		modal.on('click', function(e) {
+			if (e.target === modal[0]) {
+				closeModal();
+			}
+		});
+		
+		// Handle form submission
+		var bookingForm = $('#serviceBookingForm');
+		bookingForm.on('submit', function(e) {
+			e.preventDefault();
+			
+			// Basic validation
+			var isValid = true;
+			$(this).find('[required]').each(function() {
+				if (!$(this).val()) {
+					isValid = false;
+					$(this).css('border-color', '#810000');
+				} else {
+					$(this).css('border-color', '#dce5ec');
+				}
+			});
+			
+			if (isValid) {
+				// Show success message (demo)
+				alert('🎉 Thank you! Your service request has been submitted. A Safeway representative will contact you shortly.');
+				closeModal();
+				bookingForm[0].reset();
+			} else {
+				alert('Please fill in all required fields.');
+			}
+		});
+		
+		// Remove error border on input
+		bookingForm.find('input, select, textarea').on('input', function() {
+			$(this).css('border-color', '#dce5ec');
+		});
+		
+	});
