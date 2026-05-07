@@ -3110,7 +3110,7 @@ form textarea.form-control {
 
 .contact-info-icon {
     font-size: 42px;
-    color: #cc2b2b;
+    color: #810000;
     margin-bottom: 20px;
     display: inline-block;
 }
@@ -3348,7 +3348,7 @@ form textarea.form-control {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    color: #cc2b2b;
+    color: #810000;
     font-weight: 600;
     font-size: 14px;
     text-decoration: none;
@@ -3368,7 +3368,7 @@ form textarea.form-control {
     font-size: 12px;
     font-weight: 500;
     margin-bottom: 15px;
-    color: #cc2b2b;
+    color: #810000;
 }
 
 .services-hero {
@@ -3378,7 +3378,8 @@ form textarea.form-control {
 }
 
 .stat-box {
-    background: rgba(255, 255, 255, 0.1);
+    /* background: rgba(255, 255, 255, 0.1); */
+    border: 2px solid rgba(255, 255, 255, 0.1);
     border-radius: 16px;
     padding: 25px;
     text-align: center;
