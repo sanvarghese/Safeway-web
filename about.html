@@ -35,14 +35,21 @@
   <link rel="stylesheet" href="css/style.css" />
   <!-- Responsive CSS -->
   <link rel="stylesheet" href="css/responsive.css" />
-  
+
   <style>
     /* Popup Form Styles - Clean Modal */
-   
   </style>
 </head>
 
 <body>
+  <!-- PRELOADER -->
+  <div class="preloader" id="preloader">
+    <div class="loader-dots">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+  </div>
   <!-- Page Wrapper -->
   <div class="page-wrapper">
     <!-- Header Main Area -->
@@ -663,10 +670,13 @@
                     Your trusted vehicle service partner in Qatar — from emergency support to complete fleet management.
                   </p>
                   <ul class="pbmit-social-links">
-                    <li class="pbmit-social-li pbmit-social-facebook"><a href="#"><span><i class="pbmit-base-icon-facebook-f"></i></span></a></li>
-                    <li class="pbmit-social-li pbmit-social-twitter"><a href="#"><span><i class="pbmit-base-icon-twitter-2"></i></span></a></li>
-                    <li class="pbmit-social-li pbmit-social-instagram"><a href="#"><span><i class="pbmit-base-icon-instagram"></i></span></a></li>
-                    <li class="pbmit-social-li pbmit-social-youtube"><a href="#"><span><i class="pbmit-base-icon-youtube-play"></i></span></a></li>
+                    <li class="pbmit-social-li pbmit-social-facebook"><a href="#"><span><i
+                            class="pbmit-base-icon-facebook-f"></i></span></a></li>
+                    <!-- <li class="pbmit-social-li pbmit-social-twitter"><a href="#"><span><i class="pbmit-base-icon-twitter-2"></i></span></a></li> -->
+                    <li class="pbmit-social-li pbmit-social-instagram"><a href="#"><span><i
+                            class="pbmit-base-icon-instagram"></i></span></a></li>
+                    <li class="pbmit-social-li pbmit-social-youtube"><a href="#"><span><i
+                            class="pbmit-base-icon-youtube-play"></i></span></a></li>
                   </ul>
                 </div>
               </div>
@@ -675,7 +685,13 @@
               <div class="widget pbmit-two-column-menu">
                 <h2 class="widget-title">Useful Links</h2>
                 <div class="textwidget">
-                  <ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="service.html">Services</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul>
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -684,13 +700,20 @@
                 <h2 class="widget-title">Working Hours</h2>
                 <div class="pbmit-timelist-wrapper">
                   <ul class="pbmit-timelist-list">
-                    <li><span class="pbmit-timelist-day">Sun</span><span class="pbmit-timelist-time">7:30 am – 12:30 pm, 3:30 am – 7:30 pm</span></li>
-                    <li><span class="pbmit-timelist-day">Mon</span><span class="pbmit-timelist-time">7:30 am – 12:30 pm, 3:30am – 7:30 pm</span></li>
-                    <li><span class="pbmit-timelist-day">Tue</span><span class="pbmit-timelist-time">7:30 am – 12:30 pm, 3:30 am – 7:30 pm</span></li>
-                    <li><span class="pbmit-timelist-day">Wed</span><span class="pbmit-timelist-time">7:30 am – 12:30 pm, 3:30 am – 7:30 pm</span></li>
-                    <li><span class="pbmit-timelist-day">Thu</span><span class="pbmit-timelist-time">7:30 am – 12:30 pm, 3:30 am – 7:30 pm</span></li>
-                    <li><span class="pbmit-timelist-day">Sat</span><span class="pbmit-timelist-time">7:30am – 12:30 pm, 3:30am – 7:30 pm</span></li>
-                    <li class="pbmit-timelist-closed"><span class="pbmit-timelist-day">Fri</span><span class="pbmit-timelist-time">Closed</span></li>
+                    <li><span class="pbmit-timelist-day">Sun</span><span class="pbmit-timelist-time">7:30 am – 12:30 pm,
+                        3:30 am – 7:30 pm</span></li>
+                    <li><span class="pbmit-timelist-day">Mon</span><span class="pbmit-timelist-time">7:30 am – 12:30 pm,
+                        3:30am – 7:30 pm</span></li>
+                    <li><span class="pbmit-timelist-day">Tue</span><span class="pbmit-timelist-time">7:30 am – 12:30 pm,
+                        3:30 am – 7:30 pm</span></li>
+                    <li><span class="pbmit-timelist-day">Wed</span><span class="pbmit-timelist-time">7:30 am – 12:30 pm,
+                        3:30 am – 7:30 pm</span></li>
+                    <li><span class="pbmit-timelist-day">Thu</span><span class="pbmit-timelist-time">7:30 am – 12:30 pm,
+                        3:30 am – 7:30 pm</span></li>
+                    <li><span class="pbmit-timelist-day">Sat</span><span class="pbmit-timelist-time">7:30am – 12:30 pm,
+                        3:30am – 7:30 pm</span></li>
+                    <li class="pbmit-timelist-closed"><span class="pbmit-timelist-day">Fri</span><span
+                        class="pbmit-timelist-time">Closed</span></li>
                   </ul>
                 </div>
               </div>
@@ -699,9 +722,21 @@
               <aside class="widget">
                 <h2 class="widget-title">Say Hello</h2>
                 <div class="pbmit-contact-widget-lines">
-                  <div class="pbmit-contact-widget-line"><div class="pbmit-contact-widget-icon"><i class="pbmit-base-icon-phone-call"></i></div><div class="pbmit-contact-widget-text"><strong>Call Us</strong><a href="tel:+97460002324">+974 6000 2324</a></div></div>
-                  <div class="pbmit-contact-widget-line"><div class="pbmit-contact-widget-icon"><i class="pbmit-base-icon-email"></i></div><div class="pbmit-contact-widget-text"><strong>Email Us</strong><a href="mailto:info@safeway.com">info@safeway.com</a></div></div>
-                  <div class="pbmit-contact-widget-line"><div class="pbmit-contact-widget-icon"><i class="pbmit-base-icon-location"></i></div><div class="pbmit-contact-widget-text"><strong>Location</strong><span>Street 14, Industrial Area, Doha, Qatar</span></div></div>
+                  <div class="pbmit-contact-widget-line">
+                    <div class="pbmit-contact-widget-icon"><i class="pbmit-base-icon-phone-call"></i></div>
+                    <div class="pbmit-contact-widget-text"><strong>Call Us</strong><a href="tel:+97460002324">+974 6000
+                        2324</a></div>
+                  </div>
+                  <div class="pbmit-contact-widget-line">
+                    <div class="pbmit-contact-widget-icon"><i class="pbmit-base-icon-email"></i></div>
+                    <div class="pbmit-contact-widget-text"><strong>Email Us</strong><a
+                        href="mailto:info@safeway.com">info@safeway.com</a></div>
+                  </div>
+                  <div class="pbmit-contact-widget-line">
+                    <div class="pbmit-contact-widget-icon"><i class="pbmit-base-icon-location"></i></div>
+                    <div class="pbmit-contact-widget-text"><strong>Location</strong><span>Street 14, Industrial Area,
+                        Doha, Qatar</span></div>
+                  </div>
                 </div>
               </aside>
             </div>
@@ -710,7 +745,8 @@
         <div class="pbmit-footer-bottom-bar">
           <div class="container">
             <div class="pbmit-footer-bottom-inner">
-              <span class="pbmit-footer-copy">&copy; 2025 <a href="index.html">Safeway</a>. All rights reserved. Developed By <a href="https://xeventure.com/" target="_blank">Xeventure</a></span>
+              <span class="pbmit-footer-copy">&copy; <span id="currentYear"></span> <a href="index.html">Safeway</a>.
+                All rights reserved. Developed By <a href="https://xeventure.com/" target="_blank">Xeventure</a></span>
               <div class="pbmit-footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a></div>
             </div>
           </div>
@@ -719,23 +755,6 @@
     </footer>
     <!-- footer End -->
 
-    <!-- Search Box Start Here -->
-    <div class="pbmit-search-overlay">
-      <div class="pbmit-icon-close">
-        <svg class="qodef-svg--close qodef-m" xmlns="http://www.w3.org/2000/svg" width="28.163" height="28.163"
-          viewBox="0 0 26.163 26.163">
-          <rect width="36" height="1" transform="translate(0.707) rotate(45)"></rect>
-          <rect width="36" height="1" transform="translate(0 25.456) rotate(-45)"></rect>
-        </svg>
-      </div>
-      <div class="pbmit-search-outer">
-        <form class="pbmit-site-searchform">
-          <input type="search" class="form-control field searchform-s" name="s" placeholder="Search …" />
-          <button type="submit"></button>
-        </form>
-      </div>
-    </div>
-    <!-- Search Box End Here -->
 
     <!-- Scroll To Top -->
     <div class="pbmit-progress-wrap">
@@ -818,10 +837,11 @@
     </div>
   </div>
 
+
   <!-- JS Scripts -->
   <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
   <script src="js/jquery.min.js"></script>
-  <script src="js/popper.min.js"></script>
+  <!-- <script src="js/popper.min.js"></script> -->
   <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery.waypoints.min.js"></script>
   <script src="js/jquery.appear.js"></script>
@@ -838,6 +858,8 @@
   <script src="js/theia-sticky-sidebar.js"></script>
   <script src="js/gsap-animation.js"></script>
   <script src="js/scripts.js"></script>
+
+
 
 </body>
 

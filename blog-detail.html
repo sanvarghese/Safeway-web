@@ -38,6 +38,15 @@
 </head>
 
 <body>
+  <!-- PRELOADER -->
+  <div class="preloader" id="preloader">
+    <div class="loader-dots">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+  </div>
+  
   <!-- Page Wrapper -->
   <div class="page-wrapper">
     <!-- Header Main Area -->
@@ -277,11 +286,11 @@
                           <span><i class="pbmit-base-icon-facebook-f"></i></span>
                         </a>
                       </li>
-                      <li class="pbmit-social-li pbmit-social-twitter">
+                      <!-- <li class="pbmit-social-li pbmit-social-twitter">
                         <a title="Twitter" href="#" target="_blank" rel="noopener">
                           <span><i class="pbmit-base-icon-twitter-2"></i></span>
                         </a>
-                      </li>
+                      </li> -->
                       <li class="pbmit-social-li pbmit-social-instagram">
                         <a title="Instagram" href="#" target="_blank" rel="noopener">
                           <span><i class="pbmit-base-icon-instagram"></i></span>
@@ -401,7 +410,7 @@
             <div class="container">
               <div class="pbmit-footer-bottom-inner">
                 <span class="pbmit-footer-copy">
-                  &copy; 2025 <a href="index.html">Safeway</a>. All rights
+                  &copy; <span id="currentYear"></span> <a href="index.html">Safeway</a>. All rights
                   reserved. Developed By
                   <a href="https://xeventure.com/" target="_blank">Xeventure</a>
                 </span>
@@ -444,76 +453,76 @@
     <!-- Page Wrapper End -->
 
     <!-- SERVICE BOOKING MODAL POPUP -->
-  <div id="serviceBookingModal" class="service-modal">
-    <div class="modal-container">
-      <div class="modal-header">
-        <h3>Book Your Service</h3>
-        <button class="close-modal" id="closeModalBtn">&times;</button>
-      </div>
-      <div class="modal-body">
-        <form id="serviceBookingForm">
-          <div class="form-row">
-            <div class="form-group">
-              <label class="required">Full Name</label>
-              <input type="text" name="fullname" placeholder="John Doe" required>
+    <div id="serviceBookingModal" class="service-modal">
+      <div class="modal-container">
+        <div class="modal-header">
+          <h3>Book Your Service</h3>
+          <button class="close-modal" id="closeModalBtn">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form id="serviceBookingForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="required">Full Name</label>
+                <input type="text" name="fullname" placeholder="John Doe" required>
+              </div>
+              <div class="form-group">
+                <label class="required">Email</label>
+                <input type="email" name="email" placeholder="hello@safeway.com" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="required">Phone Number</label>
+                <input type="tel" name="phone" placeholder="+974 XXXXXXXX" required>
+              </div>
+              <div class="form-group">
+                <label class="required">Preferred Date</label>
+                <input type="date" name="date" required>
+              </div>
             </div>
             <div class="form-group">
-              <label class="required">Email</label>
-              <input type="email" name="email" placeholder="hello@safeway.com" required>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label class="required">Phone Number</label>
-              <input type="tel" name="phone" placeholder="+974 XXXXXXXX" required>
-            </div>
-            <div class="form-group">
-              <label class="required">Preferred Date</label>
-              <input type="date" name="date" required>
-            </div>
-          </div>
-          <div class="form-group">
-            <label class="required">Select Service</label>
-            <select name="service" required>
-              <option value="">-- Choose a service --</option>
-              <option>Repair Works</option>
-              <option>Air Conditioning</option>
-              <option>Tire & RIM Works</option>
-              <option>Detailing & Interiors</option>
-              <option>Battery</option>
-              <option>Brake Works</option>
-              <option>Periodic Service</option>
-              <option>Breakdown Assistance</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label class="required">Pickup Address</label>
-            <input type="text" name="pickup_address" placeholder="Street, building, area, city" required>
-          </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label class="required">Vehicle Make</label>
-              <input type="text" name="vehicle_make" placeholder="e.g., Toyota, Honda" required>
+              <label class="required">Select Service</label>
+              <select name="service" required>
+                <option value="">-- Choose a service --</option>
+                <option>Repair Works</option>
+                <option>Air Conditioning</option>
+                <option>Tire & RIM Works</option>
+                <option>Detailing & Interiors</option>
+                <option>Battery</option>
+                <option>Brake Works</option>
+                <option>Periodic Service</option>
+                <option>Breakdown Assistance</option>
+              </select>
             </div>
             <div class="form-group">
-              <label class="required">Vehicle Model</label>
-              <input type="text" name="vehicle_model" placeholder="e.g., Camry, Civic" required>
+              <label class="required">Pickup Address</label>
+              <input type="text" name="pickup_address" placeholder="Street, building, area, city" required>
             </div>
-          </div>
-          <div class="form-group">
-            <label>Issue Description (Optional)</label>
-            <textarea name="issue_description" placeholder="Describe the problem or required repair..."></textarea>
-          </div>
-          <div class="form-group">
-            <label>Landmarks / Package Details (Optional)</label>
-            <input type="text" name="landmarks" placeholder="Nearby landmark or special request">
-          </div>
-          <button type="submit" class="submit-btn"> Submit Request</button>
-          <div class="form-note">Our team will contact you within 1 hour to confirm.</div>
-        </form>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="required">Vehicle Make</label>
+                <input type="text" name="vehicle_make" placeholder="e.g., Toyota, Honda" required>
+              </div>
+              <div class="form-group">
+                <label class="required">Vehicle Model</label>
+                <input type="text" name="vehicle_model" placeholder="e.g., Camry, Civic" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Issue Description (Optional)</label>
+              <textarea name="issue_description" placeholder="Describe the problem or required repair..."></textarea>
+            </div>
+            <div class="form-group">
+              <label>Landmarks / Package Details (Optional)</label>
+              <input type="text" name="landmarks" placeholder="Nearby landmark or special request">
+            </div>
+            <button type="submit" class="submit-btn"> Submit Request</button>
+            <div class="form-note">Our team will contact you within 1 hour to confirm.</div>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
 
     <!-- JS 
         ============================================ -->
