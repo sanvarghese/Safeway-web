@@ -407,7 +407,7 @@ INDEX:
      background-color: var(--pbmit-secondary-color);
 }
  body .pbmit-bg-color-blackish{
-     background-color: var(--pbmit-blackish-color);
+     background-color: #f8f8f8;
 }
  body .pbmit-bg-color-white{
 	background-color: var(--pbmit-white-color);

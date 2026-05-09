@@ -1751,7 +1751,7 @@ body {
         content: '';
         height: 1px;
         width: 100%;
-        background: rgba(var(--pbmit-white-color-rgb), 0.4);
+        background: #810000;
         top: 119px;
 	}
 	.our-history-bg .pbmit-timeline::before{

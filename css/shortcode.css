@@ -78,7 +78,7 @@
     text-transform: none;
 }
 .pbmit-bg-color-blackish .pbmit-heading-subheading .pbmit-title{
-	color: var(--pbmit-white-color);
+	/* color: var(--pbmit-white-color); */
 }
 .pbmit-bg-color-blackish .pbmit-heading-subheading .pbmit-heading-desc{
 	color: rgba(var(--pbmit-white-color-rgb),.8);
@@ -2609,7 +2609,7 @@ body:not(.home) .header-style-1 .site-header-menu:not(.sticky-header) .pbmit-mai
 	transition: color 0.3s;
 }
 .list-group .pbmit-icon-list-text{
-	font-size: 16px;
+	font-size: 15px;
 	line-height: 25px;
 	padding-left: 10px;
     margin-bottom: 0;
@@ -2625,7 +2625,7 @@ body:not(.home) .header-style-1 .site-header-menu:not(.sticky-header) .pbmit-mai
 	margin-top: calc(15px/2);
 }
 .pbmit-bg-color-blackish .list-group .pbmit-icon-list-text{
-	color: var(--pbmit-white-color);
+	color: #777789;
 }
 
 /*----------------------------------------*/
