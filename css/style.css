@@ -2822,6 +2822,15 @@ form textarea.form-control {
     gap: 12px;
 }
 
+.pbmit-timelist-list .thu {
+    justify-content: unset;
+}
+
+.pbmit-timelist-list .thu .pbmit-timelist-time{
+    padding-left: 12px;
+
+}
+
 .pbmit-timelist-list li:first-child {
     border-top: 1px solid #1e1e1e;
 }
@@ -2864,16 +2873,26 @@ form textarea.form-control {
     margin-top: 2px;
     flex-shrink: 0;
 }
+.pbmit-contact-widget-text .separation{
+    margin-top: 10px;
+}
 
 .pbmit-contact-widget-text strong {
     display: block;
     font-size: 12px;
     font-weight: 700;
-    color: #fff;
+    color: #e9e9e9;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     margin-bottom: 3px;
 }
+
+.pbmit-contact-widget-text .branch {
+    font-size: 12px;
+    color: #ffffffc0;
+    text-transform: unset;
+}
+
 
 .pbmit-contact-widget-text a,
 .pbmit-contact-widget-text span {
@@ -3138,7 +3157,16 @@ form textarea.form-control {
     line-height: 1.5;
     font-weight: 400;
     display: block;
+    margin-bottom: 5px;
 }
+.contact-info-card p small{
+    margin-bottom: 12px;
+}
+.contact-info-card h6 {
+    margin: 4px;
+    color: #5a5a5a;
+}
+
 
 .contact-info-card a:hover {
     color: #cc2b2b;
