@@ -679,6 +679,6 @@ window.addEventListener('load', function() {
         preloader.classList.add('fade-out');
         setTimeout(function() {
             preloader.style.display = 'none';
-        }, 500);
+        }, 300);
     }
 });
